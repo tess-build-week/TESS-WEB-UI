@@ -12,10 +12,27 @@ const slideWidth = slides[0].getBoundingClientRect().width;
 // slides[1].style.left = slideWidth * 1 + "px";
 // slides[2].style.left = slideWidth * 2 + "px";
 
-slides.forEach((slide, index) => {
+const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';
-});
+};
+
+slides.forEach(setSlidePosition);
+    
 
 //when I click left, move slides to the left
+
+
 //when I click right, move slides to the right
+nextButton.addEventListener('click', e => {
+    const currentSlide = track.querySelector('.current-slide');
+    const nextSlide = currentSlide.nextElementSibling;
+    const amountToMove = nextSlide.style.left;
+    //move to the next slide
+    track.style.transform = 'translateX(-' + amountToMove + ')';
+    currentSlide.classList.remove('current-slide');
+    nextSlide.classList.add('current-slide');
+
+})
+
+
 //when I click the nac indicators, move to that slide.
