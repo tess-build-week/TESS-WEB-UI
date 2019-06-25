@@ -1,0 +1,24 @@
+.header {
+    .flex(space-between, center);
+    background-color: @tess-white;
+    .width-100();
+    height: 100px;
+    h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        color: @tess-dark-blue;
+        margin:auto;
+    }
+    nav{
+        .flex(space-between, center);
+        width: 50%;
+        a{
+            color: @tess-black;
+            margin: auto;
+            &:hover{
+                color:  lighten(@tess-black, 50%);
+            }
+        }
+    }
+}
