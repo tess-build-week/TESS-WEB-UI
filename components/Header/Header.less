@@ -1,9 +1,8 @@
 .header {
     .flex(space-between, center);
-    background-color: @tess-grey;
+    background-color: @tess-white;
     .width-100();
-    height: 120px;
-    padding-bottom: 15px;
+    height: 100px;
     h1 {
         font-size: 3rem;
         font-weight: bold;
@@ -17,6 +16,9 @@
         a{
             color: @tess-black;
             margin: auto;
+            &:hover{
+                color:  lighten(@tess-black, 50%);
+            }
         }
     }
 }

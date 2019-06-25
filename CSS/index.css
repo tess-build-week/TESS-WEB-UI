@@ -46,10 +46,9 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  background-color: #E5EAF1;
+  background-color: #FFFFFF;
   width: 100%;
-  height: 120px;
-  padding-bottom: 15px;
+  height: 100px;
 }
 .header h1 {
   font-size: 3rem;
@@ -68,4 +67,75 @@ body {
 .header nav a {
   color: #000000;
   margin: auto;
+}
+.header nav a:hover {
+  color: #808080;
+}
+.home {
+  text-align: center;
+}
+.home .TESS-intro {
+  background-color: #E5EAF1;
+}
+.home .intro-content h2 {
+  font-size: 1.5rem;
+}
+.home .intro-content p {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 10px;
+}
+.home .intro-content a {
+  width: 120px;
+  height: 30px;
+  background-color: #00C9FF;
+  color: #000000;
+  border: 1px solid #E5EAF1;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  .home .intro-content a {
+    width: 100%;
+  }
+}
+.home .intro-content a:hover {
+  color: #1a1a1a;
+  background-color: #33d4ff;
+}
+.home .charts {
+  background-color: #FFFFFF;
+}
+.home .star-search {
+  background-color: #E5EAF1;
+}
+.home .star-search button {
+  width: 120px;
+  height: 30px;
+  background-color: #00C9FF;
+  color: #000000;
+  border: 1px solid #E5EAF1;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  .home .star-search button {
+    width: 100%;
+  }
+}
+.home .star-search button:hover {
+  color: #1a1a1a;
+  background-color: #33d4ff;
 }
