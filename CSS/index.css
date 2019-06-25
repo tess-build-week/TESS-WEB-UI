@@ -112,6 +112,9 @@ body {
 .home .charts {
   background-color: #FFFFFF;
 }
+.home .charts img {
+  max-width: 600px;
+}
 .home .star-search {
   background-color: #E5EAF1;
 }
