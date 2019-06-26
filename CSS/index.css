@@ -1,11 +1,6 @@
 .width-100 {
   width: 100%;
 }
-.threed:hover {
-  box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
-  -webkit-transform: translateX(-3px);
-  transform: translateX(-3px);
-}
 @font-face {
   font-family: 'PT Sans';
   font-style: italic;
@@ -77,6 +72,7 @@ body {
 }
 .header nav a:hover {
   color: #808080;
+  cursor: pointer;
 }
 .main-container {
   margin: 0 10%;
@@ -116,6 +112,7 @@ body {
 }
 @media (max-width: 500px) {
   .main-container .home .intro-content a {
+    display: flex;
     width: 100%;
   }
 }
@@ -157,6 +154,7 @@ body {
 }
 @media (max-width: 500px) {
   .main-container .home .star-search button {
+    display: flex;
     width: 100%;
   }
 }
