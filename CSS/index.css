@@ -40,10 +40,10 @@ body {
   flex-direction: column;
   background-color: #FFFFFF;
   color: #000000;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 h1 {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 a {
   text-decoration: none;
