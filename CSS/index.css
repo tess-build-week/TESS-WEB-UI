@@ -1,3 +1,11 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
 .width-100 {
   width: 100%;
 }
@@ -76,6 +84,13 @@ body {
 }
 .main-container {
   margin: 0 10%;
+}
+.main-container a {
+  text-decoration: none;
+  margin-left: 2rem;
+}
+.main-container .header {
+  animation: 1s ease-out 0s 1 fadeIn;
 }
 .main-container .home {
   text-align: center;
