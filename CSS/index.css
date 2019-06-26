@@ -45,6 +45,9 @@ body {
 h1 {
   font-family: 'PT Sans', sans-serif;
 }
+a {
+  text-decoration: none;
+}
 .header {
   display: flex;
   justify-content: space-between;

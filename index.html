@@ -7,6 +7,7 @@
     <title>TESS Finding Planets</title>
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans&display=swap" rel="stylesheet">
+    <script src="./script/scroll.js" async></script> 
 
 </head>
 <body>
@@ -14,16 +15,16 @@
         <div class="header">
             <h1>Finding Planets - TESS</h1>
             <nav>
-                <a>TESS</a>
-                <a>How to read star charts</a>
-                <a>Search for stars</a>
+                <a href="#intro">TESS</a>
+                <a href ="#chart">How to read star charts</a>
+                <a href ="#search">Search for stars</a>
                 <a class = "login">Login</a>
             </nav>
         </div>
         
         <div class = "container home">
             <section class ="TESS-intro">
-                <div class="intro-content">
+                <div class="intro-content" id = "intro">
                     <h2>About TESS</h2>
                     <p>
                     The Transiting Exoplanet Survey Satellite (TESS) is the next step in the search for planets outside of our solar system,
@@ -56,13 +57,13 @@
                 </div>
             </section>
 
-            <section class="charts">
+            <section class="charts" id = "chart">
                 <h2>How to read the charts</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 <img src = 'imgs/exampleLightCurve.PNG'>
             </section>
 
-            <section class="star-search">
+            <section class="star-search" id = "search">
                 <h2>Search for stars</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 <button>Search</button><br>
