@@ -273,3 +273,55 @@ a {
 .carousel_indicator.current-slide {
   background: rgba(0, 0, 0, 0.75);
 }
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 100px;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+.tabs .topics {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+}
+.tabs .topics .title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.tabs .topics .tab {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin: 0 5px;
+  padding: 2px 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.tabs .topics .tab:hover {
+  text-decoration: underline;
+}
+.tabs .topics .active-tab {
+  background-color: #E5EAF1;
+  color: #000000;
+  border: 2px solid #000000;
+}
+.cards-container {
+  width: 100%;
+}
+.cards-container .card {
+  width: 100%;
+  display: none;
+}
+.cards-container .selected {
+  display: block;
+}

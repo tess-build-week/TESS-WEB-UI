@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|PT+Sans|Titillium+Web&display=swap" rel="stylesheet">
     <script src="./script/scroll.js" async></script> 
-
+    <script src="./components/Tabs/Tabs.js" async></script>
 </head>
 <body>
     <div class="main-container">
@@ -100,9 +100,58 @@
             </section>
 
             <section class="charts" id = "chart">
-                <h2>How to read the charts</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                <img src = 'imgs/exampleLightCurve.PNG'>
+                <h2>How TESS Finds Exoplanets</h2>
+                <p>Raw data from TESS is processed by a supercomputer at NASA Ames and turned into a measure of the brightness of a star. These brightness measurements can be lined up into a time series called a light curve. The light curves of stars are inspected for dips in brightness that could mean a planet is passing in front of the star, however these dips could also indicate many other types of cosmic activity. The following light curve is of the star TIC 25155310, which is confirmed to host the planet WASP-126 b.</p>
+                <div class="tabs">
+                    <div class="topics">
+                        <span class="title">FACTORS:</span>
+                        <div data-tab="example" class="tab active-tab">BASIC</div>
+                        <div data-tab="planet" class="tab">IS IT A PLANET</div>
+                        <div data-tab="depth" class="tab">SIZE OF PLANET</div>
+                        <div data-tab="period" class="tab">ORBITAL PERIOD</div>
+                    </div>
+                </div>
+                <div class="cards-container">
+                    <div class="card selected" data-tab="example">
+                    <div class="subject"></div>
+                    <div class="info">
+                        <div class="img-container">
+                            <img src = 'imgs/exampleLightCurve.PNG'>
+                        </div>
+                        <span></span>
+                    </div>
+                    </div>
+                
+                    <div class="card" data-tab="planet">
+                    <div class="subject">Is it a planet</div>
+                    <div class="info">
+                        <div class="img-container">
+                        <img src="imgs/curve-planet.PNG" />
+                        </div>
+                        <span>Needs this to be planet</span>
+                    </div>
+                    </div>
+                
+                    <div class="card" data-tab="depth">
+                    <div class="subject">Depth</div>
+                    <div class="info">
+                        <div class="img-container">
+                        <img src="imgs/curve-depth.PNG" />
+                        </div>
+                        <span>depth means size of planet</span>
+                    </div>
+                    </div>
+                
+                    <div class="card" data-tab="period">
+                    <div class="subject">Orbital period</div>
+                    <div class="info">
+                        <div class="img-container">
+                        <img src="imgs/curve-orbital-period.PNG" />
+                        </div>
+                        <span>this distance tells you about orbital period of planet</span>
+                    </div>
+                    </div>
+                </div>
             </section>
 
             <section class="star-search" id = "search">

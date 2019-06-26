@@ -1,0 +1,45 @@
+.tabs {
+    .flex(space-between, center);
+    height: 100px;
+    flex-direction: column;
+    background-color: @tess-white;
+    .topics {
+      .flex(none, center);
+      .title {
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: bold;
+      }
+      .tab {
+        .flex(none, center);
+        color: @tess-black;
+        background-color: @tess-white;
+        margin: 0 5px;
+        padding: 2px 10px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        cursor: pointer;
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .active-tab {
+        background-color: @tess-grey;
+        color: @tess-black;
+        border: 2px solid @tess-black;
+      }
+    }
+}
+
+
+.cards-container {
+    width: 100%;
+    .card {
+        width:100%;
+        display: none;
+    }
+    .selected{
+        display: block;
+    }
+  }
