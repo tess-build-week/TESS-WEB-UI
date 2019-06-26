@@ -77,6 +77,10 @@ h1 {
 .header nav a:hover {
   color: #808080;
 }
+.header nav .login {
+  border-left: 1px solid #FFFFFF;
+  padding-left: 50px;
+}
 .main-container {
   margin: 0 10%;
 }
