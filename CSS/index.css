@@ -112,6 +112,7 @@ body {
 }
 .main-container .home {
   text-align: center;
+  background-color: #02101D;
 }
 .main-container .home .TESS-intro {
   background-color: #E5EAF1;
@@ -119,9 +120,15 @@ body {
 .main-container .home .intro-content {
   padding: 1% 0;
   margin-top: 1%;
+  animation: 1s ease-out 0s 1 fadeInUp;
 }
 .main-container .home .intro-content .first-row {
-  animation: 1s ease-out 0s 1 fadeInUp;
+  background-color: #E5EAF1;
+  margin: 10px;
+}
+.main-container .home .intro-content .second-row {
+  background-color: #E5EAF1;
+  margin: 10px;
 }
 .main-container .home .intro-content h2 {
   font-size: 1.5rem;
@@ -158,7 +165,7 @@ body {
 }
 .main-container .home .charts {
   background-color: #FFFFFF;
-  margin-top: 40px;
+  padding-top: 30px;
 }
 .main-container .home .charts img {
   max-width: 600px;
@@ -203,6 +210,7 @@ body {
   height: 600px;
   width: 80%;
   margin: 0 auto;
+  border: 1px solid #02101D;
 }
 @media (max-width: 500px) {
   .carousel {
@@ -254,6 +262,8 @@ body {
 }
 .carousel_button img {
   width: 15px;
+  background-color: #C0C0C0;
+  border-radius: 50%;
 }
 .carousel_nav {
   display: flex;
