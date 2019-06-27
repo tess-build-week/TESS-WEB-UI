@@ -82,7 +82,7 @@ a {
 @media (max-width: 500px) {
   .header {
     flex-wrap: wrap;
-    height: 20.3rem;
+    height: 26.8rem;
     justify-content: center;
     text-align: center;
     align-content: flex-start;
@@ -155,7 +155,8 @@ a {
 }
 @media (max-width: 500px) {
   .main-container {
-    padding: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 .main-container a {
@@ -164,9 +165,20 @@ a {
 .main-container .home {
   text-align: center;
 }
+@media (max-width: 500px) {
+  .main-container .home {
+    margin-top: 2px;
+    width: 100%;
+  }
+}
 .main-container .home .TESS-intro {
   background-color: #E5EAF1;
   margin: -0.7% 10% 0 10%;
+}
+@media (max-width: 500px) {
+  .main-container .home .TESS-intro {
+    margin: 0;
+  }
 }
 .main-container .home .intro-content {
   padding: 1% 0;
@@ -213,6 +225,11 @@ a {
   padding-bottom: 10px;
   text-align: justify;
 }
+@media (max-width: 500px) {
+  .main-container .home .intro-content p {
+    width: 90%;
+  }
+}
 .main-container .home .intro-content a {
   width: 120px;
   height: 30px;
@@ -244,6 +261,11 @@ a {
   margin: 0 10% 0 10%;
   background-color: #E5EAF1;
 }
+@media (max-width: 500px) {
+  .main-container .home .charts {
+    margin: 0;
+  }
+}
 .main-container .home .charts img {
   width: 100%;
   padding: 0 200px;
@@ -251,6 +273,7 @@ a {
 @media (max-width: 500px) {
   .main-container .home .charts img {
     padding: 0;
+    margin: 0;
   }
 }
 .main-container .home .charts p {
@@ -259,16 +282,45 @@ a {
   padding-bottom: 10px;
   text-align: justify;
 }
+@media (max-width: 500px) {
+  .main-container .home .charts p {
+    width: 90%;
+  }
+}
 .main-container .home .star-search {
   padding: 1% 0;
   background-color: #E5EAF1;
   margin: 0 10% 0 10%;
+}
+@media (max-width: 500px) {
+  .main-container .home .star-search {
+    margin: 0;
+  }
 }
 .main-container .home .star-search p {
   width: 70%;
   margin: auto;
   padding-bottom: 10px;
   text-align: justify;
+}
+@media (max-width: 500px) {
+  .main-container .home .star-search p {
+    width: 90%;
+  }
+}
+.main-container .home .star-search form {
+  margin-bottom: -15px;
+}
+.main-container .home .star-search form #fname {
+  padding: 10px;
+  width: 30%;
+  margin-bottom: 10px;
+  border-radius: 1rem;
+}
+@media (max-width: 500px) {
+  .main-container .home .star-search form #fname {
+    width: 50%;
+  }
 }
 .main-container .home .star-search button {
   width: 120px;
@@ -309,7 +361,6 @@ a {
   justify-content: center;
   align-items: center;
   margin: auto;
-  display: inline-block;
 }
 @media (max-width: 500px) {
   .main-container .home .star-search input[type="submit"] {
@@ -358,6 +409,11 @@ a {
   background: transparent;
   border: 0;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .carousel_button {
+    display: none;
+  }
 }
 .carousel_button--left {
   left: -40px;
