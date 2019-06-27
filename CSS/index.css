@@ -246,7 +246,7 @@ a {
 .carousel_indicator.current-slide {
   background: rgba(0, 0, 0, 0.75);
 }
-.text {
+.caption-text {
   color: #FFFFFF;
   font-size: 15px;
   padding: 8px 12px;
