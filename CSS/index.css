@@ -60,6 +60,8 @@ body {
   background-color: #FFFFFF;
   color: #000000;
 }
+@media (max-width: 500px) {
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -101,7 +103,22 @@ body {
   cursor: pointer;
 }
 .main-container {
-  margin: 0 10%;
+  width: 100%;
+  padding: 0 10%;
+}
+@media (max-width: 500px) {
+  .main-container .main-container {
+    margin: 0 auto;
+  }
+  .main-container body {
+    display: none;
+  }
+  .main-container .header {
+    flex-wrap: wrap;
+  }
+  .main-container nav {
+    flex-direction: column;
+  }
 }
 .main-container a {
   text-decoration: none;
@@ -152,6 +169,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
+  width: 8rem;
 }
 @media (max-width: 500px) {
   .main-container .home .intro-content a {
@@ -168,7 +186,8 @@ body {
   padding-top: 30px;
 }
 .main-container .home .charts img {
-  max-width: 600px;
+  width: 100%;
+  padding: 0 200px;
 }
 .main-container .home .star-search {
   padding: 1% 0;
@@ -211,11 +230,6 @@ body {
   width: 80%;
   margin: 0 auto;
   border: 1px solid #02101D;
-}
-@media (max-width: 500px) {
-  .carousel {
-    display: none;
-  }
 }
 .carousel_image {
   width: 100%;

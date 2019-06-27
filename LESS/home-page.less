@@ -1,5 +1,24 @@
 .main-container {
-    margin: 0 10%;
+    width: 100%;
+    padding: 0 10%;
+
+    @media @mobile {
+        .main-container {
+            margin: 0 auto;
+        }
+
+        body {
+            display: none;
+        }
+
+        .header {
+            flex-wrap: wrap;
+        }
+
+        nav {
+            flex-direction: column;
+        }
+    }
 
     a {
     text-decoration: none;
@@ -42,13 +61,17 @@
 
             a {
                 .button-creator(120px, 30px, @tess-blue, @tess-black, 1.2rem);
+                width: 8rem;
+
             }
         }
         .charts{
             background-color: @tess-white;
             padding-top: 30px;
             img{
-                max-width: 600px;
+                width: 100%;
+                padding: 0 200px;
+
             }
         }
         .star-search{

@@ -1,6 +1,7 @@
 @import './variables';
 @import './mixins';
 
+
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900');
 
 * {
@@ -16,6 +17,10 @@ body {
   .flex(none, center, column);
   background-color: @tess-white;
   color: @tess-black;
+  
+  @media @mobile {
+    // width: 100%;
+   }
 }
 
 @import '../components/Header/Header.less';
