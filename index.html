@@ -8,20 +8,27 @@
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
     <link rel="stylesheet" href="/css/carousel-style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|PT+Sans|Titillium+Web&display=swap" rel="stylesheet">
-    <script src="./script/scroll.js" async></script> 
-    <script src="./components/Tabs/Tabs.js" async></script>
-    <script src="/script/carousel.js" async></script>
 </head>
 <body>
     <div class="main-container">
         <div class="header">
             <h1>Finding Planets - TESS</h1>
-            <nav>
+                <div class="dropdown">
+                    <div class="dropdown-button">
+                        <i class="bars"></i>
+                    </div>
+                    <div class="dropdown-content dropdown-hidden">
+                        <a class="dropdown-link" href="#" target="_blank">Login</a>
+                        <a class="dropdown-link" href="#" target="_blank">How to read star charts</a>
+                        <a class="dropdown-link" href="#" target="_blank">Search for stars</a>
+                    </div>
+                </div>
+            <!-- <nav>
                 <a href="#intro">TESS</a>
                 <a href ="#chart">How to read star charts</a>
                 <a href ="#search">Search for stars</a>
                 <a class = "login">Login</a>
-            </nav>
+            </nav> -->
         </div>
         
         <div class = "container home">
@@ -135,8 +142,6 @@
                 <p>Search for the light curve of a star or see the light curve of a random star.</p>
                 <form>
                         <input type="text" id="fname" name="firstname" placeholder="Star Name">
-                    
-                      
                         <input type = "submit" value="Search">
                 </form>
                 <br>
@@ -144,5 +149,9 @@
             </section>
         </div>
     </div>
+    <script src="./script/scroll.js" async></script>
+    <script src="./components/Tabs/Tabs.js" async></script>
+    <script src="/script/carousel.js" async></script>
+    <script src="./components/Hamburger/Hamburger.js" async></script>
 </body>
 </html>
