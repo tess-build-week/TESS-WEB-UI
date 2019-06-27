@@ -150,6 +150,19 @@ a {
   border-left: 1px solid #FFFFFF;
   padding-left: 50px;
 }
+@media (max-width: 500px) {
+  .header nav .login {
+    text-decoration: none;
+    margin-left: 2rem;
+    text-shadow: -1px 0 white, 0px white, 1px 0 white, 0 3px white;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: black;
+    margin: 0;
+    padding: 1.2rem;
+    border-bottom: 1px solid white;
+    width: 100%;
+  }
+}
 .main-container {
   width: 100%;
 }
