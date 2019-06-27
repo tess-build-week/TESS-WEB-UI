@@ -42,24 +42,12 @@ a {
   color: #FFFFFF;
   margin: auto;
 }
-.header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  width: 50%;
-}
-.header nav a {
-  color: #FFFFFF;
-  margin: auto;
-}
-.header nav a:hover {
-  color: #808080;
-  cursor: pointer;
-}
-.header nav .login {
-  border-left: 1px solid #FFFFFF;
-  padding-left: 50px;
+.header .login {
+  height: 40px;
+  margin-right: 25px;
+  width: 60px;
+  font-weight: bold;
+  border: 5px solid #000068;
 }
 .main-container {
   margin: 0 10%;
