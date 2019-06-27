@@ -1,0 +1,66 @@
+.about-container{
+    width:72%;
+}
+
+
+.tabs-about {
+    .flex(space-between, center);
+    height: 100px;
+    background-color: @tess-white;
+    margin-left: 25%;
+    .topics-about {
+      .flex(none, center);
+      .title-about {
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: bold;
+      }
+      .tab-about {
+        .flex(none, center);
+        color: @tess-black;
+        background-color: @tess-white;
+        margin: 0 5px;
+        padding: 2px 10px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        cursor: pointer;
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .active-tab-about {
+        background-color: @tess-grey;
+        color: @tess-black;
+        border: 2px solid @tess-black;
+      }
+    }
+}
+
+.cards-about{
+    .flex(space-evenly);
+    .width-100();
+    margin-top: 16px;
+    flex-wrap: wrap;
+    .card-about{
+        .flex(space-evenly);
+        width: 350px;
+        margin-top: 20px;
+        img{
+            width: 100px;
+            border-radius: 50px;
+        }
+        .text{
+            .flex(center, space-evenly, column);
+            padding-left: 10px;
+        }
+        span {
+            font-size: 12px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}

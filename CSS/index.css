@@ -318,3 +318,84 @@ a {
 .cards-container .selected {
   display: block;
 }
+.about-container {
+  width: 72%;
+}
+.tabs-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 100px;
+  background-color: #FFFFFF;
+  margin-left: 25%;
+}
+.tabs-about .topics-about {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+}
+.tabs-about .topics-about .title-about {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.tabs-about .topics-about .tab-about {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin: 0 5px;
+  padding: 2px 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.tabs-about .topics-about .tab-about:hover {
+  text-decoration: underline;
+}
+.tabs-about .topics-about .active-tab-about {
+  background-color: #E5EAF1;
+  color: #000000;
+  border: 2px solid #000000;
+}
+.cards-about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+.cards-about .card-about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-direction: row;
+  width: 350px;
+  margin-top: 20px;
+}
+.cards-about .card-about img {
+  width: 100px;
+  border-radius: 50px;
+}
+.cards-about .card-about .text {
+  display: flex;
+  justify-content: center;
+  align-items: space-evenly;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.cards-about .card-about span {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.cards-about .card-about a {
+  text-decoration: none;
+}
