@@ -246,6 +246,15 @@ a {
 .carousel_indicator.current-slide {
   background: rgba(0, 0, 0, 0.75);
 }
+.text {
+  color: #FFFFFF;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
 .tabs {
   display: flex;
   justify-content: space-between;
