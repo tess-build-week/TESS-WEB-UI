@@ -361,6 +361,9 @@ a {
   width: 350px;
   margin-top: 20px;
 }
+.cards-about .card-about:hover {
+  box-shadow: 1px 1px 1px 1px #E5EAF1;
+}
 @media (max-width: 850px) {
   .cards-about .card-about {
     width: 100%;
@@ -388,6 +391,9 @@ a {
 }
 .cards-about .card-about a {
   text-decoration: none;
+}
+.cards-about .card-about a:hover {
+  text-shadow: 0.25px 0.25px;
 }
 /* -------------- Hamburger Menu ---------------*/
 .dropdown {
