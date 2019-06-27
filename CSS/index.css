@@ -304,7 +304,12 @@ a {
   flex-direction: row;
   height: 100px;
   background-color: #FFFFFF;
-  margin-left: 25%;
+  margin-left: 23%;
+}
+@media (max-width: 850px) {
+  .tabs-about {
+    margin-left: 0;
+  }
 }
 .tabs-about .topics-about {
   display: flex;
@@ -355,6 +360,11 @@ a {
   flex-direction: row;
   width: 350px;
   margin-top: 20px;
+}
+@media (max-width: 850px) {
+  .cards-about .card-about {
+    width: 100%;
+  }
 }
 .cards-about .card-about img {
   width: 100px;

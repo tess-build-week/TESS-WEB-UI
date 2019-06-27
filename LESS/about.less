@@ -7,7 +7,10 @@
     .flex(space-between, center);
     height: 100px;
     background-color: @tess-white;
-    margin-left: 25%;
+    margin-left: 23%;
+    @media @tablet{
+        margin-left: 0;
+    }
     .topics-about {
       .flex(none, center);
       .title-about {
@@ -46,6 +49,9 @@
         .flex(space-evenly);
         width: 350px;
         margin-top: 20px;
+        @media @tablet{
+            width:100%;
+        }
         img{
             width: 100px;
             border-radius: 50px;
