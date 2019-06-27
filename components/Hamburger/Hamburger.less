@@ -1,0 +1,107 @@
+/* -------------- Hamburger Menu ---------------*/
+
+.dropdown {
+  z-index: 2;
+  position: absolute;
+  margin-left: 25px;
+  cursor: pointer;
+  height: 100px;
+    .dropdown-button {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background: @space-blue;
+    border-radius: 10%;
+    border: 5px solid rgb(0, 0, 104);
+  }
+  .dropdown-button:hover {
+      background-color: @space-blue;
+      color: #fff;
+  }
+}
+
+/* -------------- Bars ---------------*/
+
+.bars,
+.bars:before, 
+.bars:after {
+  position: relative;
+  width: 25px;
+  height: 5px;
+  margin: 0 auto;
+  background: #ecf0f1;
+  border-radius: 3px;
+  transition: top .2s .2s;
+  transform: .2s;
+  background: 0 .2s;
+}
+
+.bars:before,
+.bars:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.bars:before {
+  top: -15px;
+}
+
+.bars:after {
+  top: 15px;
+}
+
+.active .bars:before,
+.active .bars:after {
+  transition: top .2s;
+  transform: .2s .2s;
+  top: 0;
+}
+
+.active .bars {
+  background: transparent;
+}
+
+.active .bars:before {
+  transform: rotate(45deg);
+}
+
+.active .bars:after {
+  transform: rotate(-45deg);
+}
+
+/*-------------- Dropdown --------------- */
+
+.dropdown-content {
+  width: 200px;
+  position: absolute;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-top: 10px;
+  border: 2.5px solid @space-blue;
+}
+
+.dropdown-link {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: @space-blue;
+}
+
+.dropdown-link:hover {
+  color: @space-blue;
+  background-color: @tess-grey;
+}
+
+.dropdown-hidden {
+  display: none;
+}
