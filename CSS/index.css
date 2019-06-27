@@ -82,7 +82,7 @@ a {
 @media (max-width: 500px) {
   .header {
     flex-wrap: wrap;
-    height: 26.8rem;
+    height: 13rem;
     justify-content: center;
     text-align: center;
     align-content: flex-start;
@@ -93,7 +93,6 @@ a {
   font-weight: bold;
   text-align: center;
   color: #FFFFFF;
-  margin: auto;
   text-shadow: -1px 0 white, 0px white, 1px 0 white, 0 3px white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
@@ -119,10 +118,7 @@ a {
 }
 @media (max-width: 500px) {
   .header nav {
-    flex-direction: column;
-    height: 8rem;
-    margin-top: 15px;
-    width: 100%;
+    display: none;
   }
 }
 .header nav a {
@@ -472,7 +468,6 @@ a {
 }
 @media (max-width: 500px) {
   .tabs {
-    border: 1px solid red;
     padding: 0;
     width: 100%;
   }
