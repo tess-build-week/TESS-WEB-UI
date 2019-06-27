@@ -135,9 +135,6 @@ a {
   background-color: #FFFFFF;
   margin-top: 40px;
 }
-.main-container .home .charts img {
-  max-width: 600px;
-}
 .main-container .home .star-search {
   padding: 1% 0;
   margin-top: 1%;
@@ -279,8 +276,8 @@ a {
   align-items: center;
   flex-direction: row;
   height: 100px;
-  flex-direction: column;
   background-color: #FFFFFF;
+  margin-left: 25%;
 }
 .tabs .topics {
   display: flex;
@@ -315,11 +312,7 @@ a {
   color: #000000;
   border: 2px solid #000000;
 }
-.cards-container {
-  width: 100%;
-}
 .cards-container .card {
-  width: 100%;
   display: none;
 }
 .cards-container .selected {
