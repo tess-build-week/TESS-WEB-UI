@@ -364,6 +364,10 @@ a {
 @media (max-width: 850px) {
   .cards-about .card-about {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
   }
 }
 .cards-about .card-about img {
