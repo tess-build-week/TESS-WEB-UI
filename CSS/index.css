@@ -75,7 +75,7 @@ body {
 @media (max-width: 500px) {
   .header {
     flex-wrap: wrap;
-    height: 20rem;
+    height: 20.3rem;
     justify-content: center;
     text-align: center;
     align-content: flex-start;
@@ -151,11 +151,6 @@ body {
 .main-container a {
   text-decoration: none;
 }
-@media (max-width: 500px) {
-  .main-container .header a {
-    text-decoration: none;
-  }
-}
 .main-container .home {
   text-align: center;
   background-color: #02101D;
@@ -188,6 +183,7 @@ body {
   width: 70%;
   margin: auto;
   padding-bottom: 10px;
+  text-align: justify;
 }
 .main-container .home .intro-content a {
   width: 120px;
