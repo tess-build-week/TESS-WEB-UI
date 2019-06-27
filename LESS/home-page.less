@@ -1,6 +1,5 @@
 .main-container {
     width: 100%;
-    padding: 0 10%;
 
     @media @mobile {
         padding: 0;
@@ -12,10 +11,10 @@
 
         .home{
             text-align: center;
-            background-color: #02101D;
 
             .TESS-intro{
             background-color: @tess-grey;
+            margin: -.7% 10% 0 10%;
             }
             .intro-content{
                 padding: 1% 0;
@@ -26,25 +25,22 @@
                     margin: 0;
                 }
 
-            .first-row {
-                background-color: @tess-grey;
-                margin: 10px;
-
-            }
-            .second-row {
-                background-color: @tess-grey;
-                margin: 10px;
+            a{
+                .button-creator(150px, 30px, @tess-blue, @tess-black, 1.2rem);
             }
 
 
                 h2{
                     font-size: 1.5rem; 
+                    text-align: center;
+                    
                 }
                 p{
                     width: 70%;
                     margin:auto;
                     padding-bottom:10px;
                     text-align: justify;
+                
                 }
 
                 a {
@@ -54,8 +50,10 @@
                 }
             }
             .charts{
-                background-color: @tess-white;
                 padding-top: 30px;
+                margin: 0 10% 0 10%;
+                background-color: @tess-grey;
+
                 img{
                     width: 100%;
                     padding: 0 200px;
@@ -65,18 +63,30 @@
                     }
 
                 }
+
+                p {
+                    width: 70%;
+                    margin:auto;
+                    padding-bottom:10px;
+                    text-align: justify;
+                }
             }
             .star-search{
                 padding: 1% 0;
-                margin-top: 1%;
                 background-color: @tess-grey;
+                margin: 0 10% 0 10%;
                 p{
                     width: 70%;
                     margin:auto;
                     padding-bottom:10px;
+                    text-align: justify;
                 }
                 button{
                     .button-creator(120px, 30px, @tess-blue, @tess-black, 1rem);
+            }
+            input[type="submit"]{
+                .button-creator(120px, 30px, @tess-blue, @tess-black, 1rem);
+                display: inline-block;
             }
         }
     }
