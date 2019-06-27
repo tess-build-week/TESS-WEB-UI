@@ -7,6 +7,14 @@
     height: 100px;
     animation: 1s ease-out 0s 1 fadeIn;
 
+    @media @mobile {
+        flex-wrap: wrap;
+        height: 20rem;
+        justify-content: center;
+        text-align: center;
+        align-content: flex-start;
+    }
+
     h1 {
         font-size: 3rem;
         font-weight: bold;
@@ -19,18 +27,47 @@
         border: 3px solid white;
         padding: 7px;
         border-radius: 20px;
+
+        @media @mobile {
+                border-radius: 50%;
+                padding-bottom: 1rem;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+        }
     }
     
     nav{
         .flex(space-between, center);
         width: 50%;
-        a{
+
+        @media @mobile {
+            flex-direction: column;
+            height: 8rem;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        a {
             color: @tess-white;
             margin: auto;
             &:hover{
                 color:  lighten(@tess-black, 50%);
                 cursor: pointer;
             }
+            @media @mobile{
+
+            text-decoration: none;
+            margin-left: 2rem;
+            text-shadow: -1px 0 white, 0px white, 1px 0 white, 0 3px white;
+            -webkit-text-stroke-width: .2px;
+            -webkit-text-stroke-color: black;
+             margin: 0;
+             padding: 1.2rem;
+             border-bottom: 1px solid white;
+             width: 100%;
+            }
         }
     }
 }
+    
