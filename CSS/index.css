@@ -432,13 +432,13 @@ a {
   left: -40px;
 }
 .carousel_button--left :hover {
-  transform: scale(1.5);
+  transform: scale(2);
 }
 .carousel_button--right {
   right: -55px;
 }
 .carousel_button--right :hover {
-  transform: scale(1.5);
+  transform: scale(2);
 }
 .carousel_button img {
   width: 15px;
