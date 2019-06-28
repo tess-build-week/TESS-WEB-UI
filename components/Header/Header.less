@@ -1,4 +1,5 @@
 .header {
+    padding: 0 25px;
     .flex(space-between, center);
     background-image: url("../imgs/space-header.jpg");
     background-size: cover;
@@ -6,11 +7,14 @@
     .width-100();
     height: 100px;
     h1 {
-        font-size: 3rem;
+        font-size: 3vw;
         font-weight: bold;
         text-align: center;
         color: @tess-white;
         margin:auto;
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
     }
     nav{
         .flex(space-between, center);
@@ -23,9 +27,13 @@
                 cursor: pointer;
             }
         }
-        .login{
-            border-left: 1px solid @tess-white;
-            padding-left: 50px;
+        @media (max-width: 768px) {
+            display: none;
         }
+}
     }
+.login {
+    height: 40px;
+    width: 60px;
+    border: 5px solid rgb(0, 0, 104);
 }
