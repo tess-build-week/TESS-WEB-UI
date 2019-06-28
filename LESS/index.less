@@ -1,0 +1,31 @@
+@import './variables';
+@import './mixins';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0; 
+  padding: 0;
+}
+
+body {
+  .flex(none, center, column);
+  background-color: @tess-white;
+  color: @tess-black;
+  font-family: @content-font;
+}
+
+h1{
+  font-family: @header-font;
+}
+a{
+  text-decoration: none;
+}
+
+@import '../components/Header/Header.less';
+@import './home-page';
+@import 'carousel.less';
+@import '../components/Tabs/Tabs.less';
+@import '../components/Hamburger/Hamburger.less';

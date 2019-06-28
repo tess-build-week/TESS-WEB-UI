@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TESS Finding Planets</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+    <link rel="stylesheet" href="/css/carousel-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|PT+Sans|Titillium+Web&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="dropdown">
+                <div class="dropdown-button">
+                    <i class="bars"></i>
+                </div>
+                <div class="dropdown-content dropdown-hidden">
+                    <a class="dropdown-link" href="#" target="_blank">About Us</a>
+                    <a class="dropdown-link" href="#" target="_blank">How to read star charts</a>
+                    <a class="dropdown-link" href="#" target="_blank">Search for stars</a>
+                </div>
+            </div>
+            <h1>Finding Planets - TESS</h1>
+            <nav>
+                <a href="#intro">TESS</a>
+                <a href ="#chart">How to read star charts</a>
+                <a href ="#search">Search for stars</a>
+            </nav>
+            <button class="login">
+                <a href="https://thenasaprojecttess.netlify.com/" target="_blank">Login</a>
+            </button>
+        </div>
+        
+        <div class = "container home">
+            <section class ="TESS-intro">
+                <div class="intro-content" id = "intro">
+                    <h2>About TESS</h2>
+                    <p>
+                    The Transiting Exoplanet Survey Satellite (TESS) is the next step in the search for planets outside of our solar system,
+                    including those that could support life. The mission will find exoplanets that periodically block part of the light from
+                    their host stars, events called transits. TESS will survey 200,000 of the brightest stars near the sun to search for
+                    transiting exoplanets. TESS launched on April 18, 2018, aboard a SpaceX Falcon 9 rocket.
+                    
+                    TESS scientists expect the mission will catalog thousands of planet candidates and vastly increase the current number of
+                    known exoplanets. Of these, approximately 300 are expected to be Earth-sized and super-Earth-sized exoplanets, which are
+                    worlds no larger than twice the size of Earth. TESS will find the most promising exoplanets orbiting our nearest and
+                    brightest stars, giving future researchers a rich set of new targets for more comprehensive follow-up studies.</p>
+
+                    <h4>Mission Approach</h4>
+                    
+                    <p>TESS will survey the entire sky over the course of two years by breaking it up into 26 different sectors, each 24
+                    degrees by 96 degrees across. The powerful cameras on the spacecraft will stare at each sector for at least 27 days,
+                    looking at the brightest stars at a two-minute cadence. From Earth, the moon occupies half a degree, which is less than
+                    1/9,000th the size of the TESS tiles.
+                    
+                    The stars TESS will study are 30 to 100 times brighter than those the Kepler mission and K2 follow-up surveyed, which
+                    will enable far easier follow-up observations with both ground-based and space-based telescopes. TESS will also cover a
+                    sky area 400 times larger than that monitored by Kepler.
+                    
+                    In addition to its search for exoplanets, TESS will allow scientists from the wider community to request targets for
+                    astrophysics research on approximately 20,000 additional objects during the mission through its Guest Investigator
+                    program.</p>
+                    <a href = 'https://www.nasa.gov/tess-transiting-exoplanet-survey-satellite'>Learn More &#10095;</a>
+                </div>
+                <div class="carousel-main-container">
+                    <div class="carousel">
+                        <button class="carousel_button carousel_button--left">
+                            <img src="/imgs/left.png" alt="">
+                        </button>
+                
+                        <div class="carousel_track-container">
+                            <ul class="carousel_track">
+                                <li class="carousel_slide current-slide">
+                                    <img class ="carousel_image" src="/imgs/4k-wallpaper-astro-astrology-1146134.jpg" alt="">
+                                </li>
+                                <li class="carousel_slide">
+                                    <img class ="carousel_image" src="/imgs/astronomy-atmosphere-earth-220201.jpg" alt="">
+                                </li>
+                                <li class="carousel_slide">
+                                    <img class ="carousel_image" src="/imgs/astronomy-ball-bright-39561.jpg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="carousel_button carousel_button--right">
+                                <img src="/imgs/right.png" alt="">
+                        </button>
+                
+                        <div class="carousel_nav">
+                            <button class="carousel_indicator current-slide"></button>
+                            <button class="carousel_indicator"></button>
+                            <button class="carousel_indicator"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="charts" id = "chart">
+                <h2>How TESS Finds Exoplanets</h2>
+                <p>Raw data from TESS is processed by a supercomputer at NASA Ames and turned into a measure of the brightness of a star. These brightness measurements can be lined up into a time series called a light curve. The light curves of stars are inspected for dips in brightness that could mean a planet is passing in front of the star, however these dips could also indicate many other types of cosmic activity. The following light curve is of the star TIC 25155310, which is confirmed to host the planet WASP-126 b.</p>
+                <div class="tabs">
+                    <div class="topics">
+                        <span class="title">FACTORS:</span>
+                        <div data-tab="example" class="tab active-tab">LIGHT CURVE</div>
+                        <div data-tab="planet" class="tab">IS IT A PLANET</div>
+                        <div data-tab="depth" class="tab">SIZE OF PLANET</div>
+                        <div data-tab="period" class="tab">ORBITAL PERIOD</div>
+                    </div>
+                </div>
+                <div class="cards-container">
+                    <div class="card selected" data-tab="example">
+                        <div class="img-container">
+                            <img src = 'imgs/exampleLightCurve.PNG'>
+                        </div>
+                        <span>Notice the dips in the relative brightness of the star in this light curve. </span>
+                    </div>
+                
+                    <div class="card" data-tab="planet">
+                        <div class="img-container">
+                        <img src="imgs/curve-planet.PNG" />
+                        </div>
+                        <span>The many dips in the light curve evidence that this is a transiting planet crossing the star and not some other celestial event affecting the brightness of the star.</span>
+                    </div>
+                
+                    <div class="card" data-tab="depth">
+                        <div class="img-container">
+                        <img src="imgs/curve-depth.PNG" />
+                        </div>
+                        <span>The size of the planet is proportional to the depth of the transits. Larger dips means a larger planet. </span>
+                    </div>
+                
+                    <div class="card" data-tab="period">
+                        <div class="img-container">
+                        <img src="imgs/curve-orbital-period.PNG" />
+                        </div>
+                        <span>The distance between transits indicates the orbital period of planet.</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="star-search" id = "search">
+                <h2>Search for stars</h2>
+                <p>Search for the light curve of a star or see the light curve of a random star.</p>
+                <form>
+                        <input type="text" id="fname" name="firstname" placeholder="Star Name">
+                        <input type = "submit" value="Search">
+                </form>
+                <br>
+                <button>Random Star</button>
+            </section>
+        </div>
+    </div>
+    <script src="./script/scroll.js" async></script>
+    <script src="./components/Tabs/Tabs.js" async></script>
+    <script src="/script/carousel.js" async></script>
+    <script src="./components/Hamburger/Hamburger.js" async></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.width-100 {
+    width: 100%;
+}
+
+.flex(@jc: none, @ai: none, @dir: row) {
+display: flex;
+justify-content: @jc;
+align-items: @ai;
+flex-direction: @dir;
+}
+
+.button-creator(@width, @height, @bg-color, @font-color, @font-size) {
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    border: 1px solid @tess-grey;
+    cursor: pointer;
+    font-size: @font-size;
+    text-decoration: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+  
+    @media @mobile {
+      display: flex;
+      width: 100%;
+    }
+    
+    &:hover {
+      color: lighten(@font-color,10%); 
+      background-color: lighten(@bg-color,10%);
+    }
+  }
