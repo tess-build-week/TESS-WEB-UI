@@ -46,6 +46,8 @@ a {
 @media (max-width: 768px) {
   .header h1 {
     font-size: 2rem;
+    margin: 0;
+    padding: 0 15px;
   }
 }
 .header nav {
@@ -419,7 +421,6 @@ a {
 /* -------------- Hamburger Menu ---------------*/
 .dropdown {
   z-index: 2;
-  position: absolute;
   margin-left: 25px;
   cursor: pointer;
   height: 100px;
