@@ -1,8 +1,14 @@
 .tabs {
+
+    @media @mobile {
+        padding: 0;
+        width: 100%;
+    }
+
     .flex(space-between, center);
     height: 100px;
     background-color: @tess-white;
-    margin-left: 25%;
+    padding-left: 25%;
     .topics {
       .flex(none, center);
       .title {
@@ -32,6 +38,9 @@
     }
 }
 
+img {
+  margin-top: 10px;
+}
 
 .cards-container {
     .card {

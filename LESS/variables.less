@@ -11,6 +11,30 @@
 @mobile: ~"(max-width: 500px)";
 @tablet: ~"(max-width: 850px)";
 
+//animation keyframes
+@keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 100;
+        }
+      }
+      
+@keyframes fadeInUp {
+        from {
+            transform: translate3d(0,40px,0);
+            opacity: 0;
+            
+        }
+    
+        to {
+            transform: translate3d(0,0,0);
+            visibility: visible;
+            opacity: 1;
+            
+        }
+    }
 // Fonts 
 // Lato and PT Sans are also included in the import in the html
 @header-font: 'Open Sans', sans-serif;

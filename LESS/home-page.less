@@ -1,46 +1,143 @@
 .main-container {
-    margin: 0 10%;
+    width: 100%;
 
-    .home{
-        text-align: center;
-        .TESS-intro{
+    @media @mobile {
+        width: 100%;
+        height: 100%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+        .home{
+            text-align: center;
+
+            @media @mobile {
+                margin-top: 2px;
+                width: 100%;
+            }
+
+            .TESS-intro{
             background-color: @tess-grey;
-        }
-        .intro-content{
-            padding: 1% 0;
-            margin-top: 1%;
+            margin: -.7% 10% 0 10%;
 
-            h2{
-                font-size: 1.5rem;
+            @media @mobile {
+                margin: 0;
             }
-            p{
-                width: 70%;
-                margin:auto;
-                padding-bottom:10px;
+
             }
+            .intro-content{
+                padding: 1% 0;
+                margin-top: 1%;
+                animation: 1s ease-out 0s 1 fadeInUp;
+
+                @media @mobile {
+                    margin: 0;
+                }
+
             a{
                 .button-creator(150px, 30px, @tess-blue, @tess-black, 1.2rem);
             }
-        }
-        .charts{
-            background-color: @tess-white;
-            margin-top: 40px;
-        }
-        .star-search{
-            padding: 1% 0;
-            margin-top: 1%;
-            background-color: @tess-grey;
-            p{
-                width: 70%;
-                margin:auto;
-                padding-bottom:10px;
+
+
+                h2{
+                    font-size: 1.5rem; 
+                    text-align: center;
+                    
+                }
+                p{
+                    width: 70%;
+                    margin:auto;
+                    padding-bottom:10px;
+                    text-align: justify;
+
+                    @media @mobile {
+                        width: 90%;
+                    }
+                
+                }
+
+                a {
+                    .button-creator(120px, 30px, @tess-blue, @tess-black, 1.2rem);
+                    width: 8rem;
+
+                }
             }
-            button{
-                .button-creator(120px, 30px, @tess-blue, @tess-black, 1rem);
+            .charts{
+                padding-top: 30px;
+                margin: 0 10% 0 10%;
+                background-color: @tess-grey;
+
+                @media @mobile {
+                    margin: 0;
+                }
+
+                img{
+                    width: 100%;
+                    padding: 0 200px;
+
+                    @media @mobile {
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                }
+
+                p {
+                    width: 70%;
+                    margin:auto;
+                    padding-bottom:10px;
+                    text-align: justify;
+
+                    @media @mobile {
+                        width: 90%;
+                    }
+                }
+
+            }
+
+            .star-search{
+                padding: 1% 0;
+                background-color: @tess-grey;
+                margin: 0 10% 0 10%;
+
+                @media @mobile {
+                    margin: 0;
+                }
+
+                p{
+                    width: 70%;
+                    margin:auto;
+                    padding-bottom:10px;
+                    text-align: center;
+
+                    @media @mobile {
+                        width: 90%;
+                    }
+                }
+
+                form {
+                    margin-bottom: -15px;
+
+                    #fname {
+                       padding: 10px;
+                       width: 30%; 
+                       margin-bottom: 10px;
+                       border-radius: 1rem;
+
+                       @media @mobile {
+                        width: 50%;
+                    }
+                    }
+                }
+
+                button{
+                    .button-creator(120px, 30px, @tess-blue, @tess-black, 1rem);
             }
             input[type="submit"]{
                 .button-creator(120px, 30px, @tess-blue, @tess-black, 1rem);
-                display: inline-block;
+                    
             }
         }
     }
