@@ -1,4 +1,5 @@
 .header {
+    padding: 0 25px;
     .flex(space-between, center);
     background-image: url("../imgs/space-header.jpg");
     background-size: cover;
@@ -16,10 +17,11 @@
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 3vw;
         font-weight: bold;
         text-align: center;
         color: @tess-white;
+
         text-shadow: -1px 0 white, 0px white, 1px 0 white, 0 3px white;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
@@ -33,6 +35,7 @@
                 border-top: none;
                 border-left: none;
                 border-right: none;
+
         }
     }
     
@@ -64,6 +67,7 @@
              width: 100%;
             }
         }
+
         .login{
             border-left: 1px solid @tess-white;
             padding-left: 50px;
@@ -79,8 +83,14 @@
             padding: 1.2rem;
             border-bottom: 1px solid white;
             width: 100%;
-            }
+         }
+
         }
+      }
     }
+
+.login {
+    height: 40px;
+    width: 60px;
+    border: 5px solid rgb(0, 0, 104);
 }
-    

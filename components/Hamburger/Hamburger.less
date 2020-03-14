@@ -2,7 +2,6 @@
 
 .dropdown {
   z-index: 2;
-  position: absolute;
   margin-left: 25px;
   cursor: pointer;
   height: 100px;
@@ -104,4 +103,10 @@
 
 .dropdown-hidden {
   display: none;
+}
+
+@media (min-width: 769px) {
+  .dropdown {
+    display: none;
+  }
 }
